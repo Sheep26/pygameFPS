@@ -14,7 +14,7 @@ screen = pygame.display.set_mode([500, 500])
 running = True
 pygame.init()
 screen = pygame.display.set_mode((1280, 720))
-pygame.display.set_caption('Graphing calculator')
+pygame.display.set_caption('Example')
 clock = pygame.time.Clock()
 maxFPS = 144
 running = True
