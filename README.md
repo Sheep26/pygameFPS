@@ -5,7 +5,7 @@ A simple python package to show your fps in pygame
 # Install
 ```pip install pygameFPS```
 
-# Example:
+# Example
 ```
 import pygame
 import pygameFPS as fps
