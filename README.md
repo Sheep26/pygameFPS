@@ -1,6 +1,6 @@
 # pygameFPS
 
-A simple python package to show your fps in pygame
+A python package to the show client fps in a pygame project
 
 # Install
 ```pip install pygameFPS```
