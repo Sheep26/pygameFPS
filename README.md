@@ -20,7 +20,6 @@ maxFPS = 144
 running = True
 
 while running:
-    mouse_pos = pygame.mouse.get_pos()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
@@ -32,26 +31,7 @@ while running:
     fps.render(screen, 50, 50, 24, (255, 255, 255))
     
     screen.fill("black")
-    width = 1280
-    height = 720
-    colour = (255, 255, 255)
-    font = pygame.font.SysFont(None, 24)
-    img = font.render(f'FPS: {getFPS()}', True, colour)
-    screen.blit(img, (20, 20))
-    pygame.draw.line(screen, colour, (width / 2, 0), (width / 2, height), 3)
-    pygame.draw.line(screen, colour, (0, height / 2), (width, height / 2), 3)
-
-    for line in lines:
-        if not line.getCalculated():
-            line.calculate()
-        x = line.x
-        y = line.y
-        x2 = line.x2
-        y2 = line.y2
-        half_width = width / 2
-        half_height = height / 2
-        pygame.draw.line(screen, colour, (half_width + x, half_height + y), (half_width + x2, half_height + y2), 3)
-
+    
     pygame.display.flip()
 
     clock.tick(maxFPS)
