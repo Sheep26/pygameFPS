@@ -28,8 +28,6 @@ def getFPS() -> int:
 def tick():
     for frame in fps:
         frame.tick()
-        if frame.canRemove():
-            fps.remove(frame)
     fps.append(Frame(time.time()))
     
 def render(surface: pygame.surface, x: int == 20, y: int == 20, size: int == 24, colour: tuple == (255, 255, 255)):
