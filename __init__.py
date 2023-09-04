@@ -17,7 +17,7 @@ class Frame():
     def canRemove(self) -> bool:
         return self.getDeltaFramteime() >= 1
     
-    def tick():
+    def tick(self):
         if self.canRemove():
             fps.remove(self)
                 
@@ -29,7 +29,7 @@ def tick():
         frame.tick()
     fps.append(Frame(time.time()))
     
-def render(surface: pygame.surface, x: int == 20, y: int == 20, size: int == 24, colour: tuple == (255, 255, 255)):
+def render(surface: pygame.surface, x = 20, y = 20, size = 24, colour = (255, 255, 255)):
     font = pygame.font.SysFont(None, size)
     img = font.render(f'FPS: {getFPS()}', True, colour)
     surface.blit(img, (x, y))
