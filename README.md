@@ -3,6 +3,7 @@
 A simple python package to show your fps in pygame
 
 Example:
+'
 import pygame
 import pygameFPS as fps
 pygame.init()
@@ -53,3 +54,4 @@ while running:
     clock.tick(maxFPS)
 
 pygame.quit()
+'
