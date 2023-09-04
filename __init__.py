@@ -18,9 +18,8 @@ class Frame():
         return self.getDeltaFramteime() >= 1
     
     def tick():
-        for frame in fps:
-            if frame.canRemove():
-                fps.remove(frame)
+        if self.canRemove():
+            fps.remove(self)
                 
 def getFPS() -> int:
     return len(fps)
