@@ -25,7 +25,7 @@ while running:
             running = False
 
     fps.tick()
-    # default rendering
+    # default rendering agrs(surface)
     fps.render(screen)
     # custom args(surface, x, y, size, color)
     fps.render(screen, 50, 50, 24, (255, 255, 255))
