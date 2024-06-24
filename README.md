@@ -10,8 +10,6 @@ A python package to the show client fps in a pygame project
 import pygame
 import pygameFPS as fps
 pygame.init()
-screen = pygame.display.set_mode([500, 500])
-running = True
 screen = pygame.display.set_mode((1280, 720))
 pygame.display.set_caption('Example')
 clock = pygame.time.Clock()
